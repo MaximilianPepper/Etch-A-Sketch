@@ -5,12 +5,19 @@ body {
     align-items: center; 
     height: 100vh; 
     margin: 0; 
+    background: linear-gradient(to right, rgb(64, 59, 74), rgb(231, 233, 187));;
+h1 {
+    margin-bottom: 20px;
+}
 }.container {
     display: flex;
     height: 600px;
     width: 600px;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+
 
 
 }
@@ -23,9 +30,41 @@ body {
 .container div div {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     flex: 1;
 }
-.black {
+
+.active {
+    background-color: white;
+    color:black;
+}
+
+#range {
+    -webkit-appearance: none;
+    background: #111;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  }
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: turquoise;
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px turquoise;
+  }
+
+button {
     background-color: black;
+    color: white;
+    height: 40px;
+    width: 90px;
+}
+p {
+    margin-left: 45px;
+    font-weight: 600;
+    margin-bottom: -5px;
 }

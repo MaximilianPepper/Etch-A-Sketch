@@ -8,9 +8,16 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <h1>Etch-A-Sketch</h1>
     <header>
-        <input type="range" min="4" max="100" value="50" class="slider" id="range">
+        <span><p class="square-size">64x64</p><input type="range" min="4" max="100" value="40" class="slider" id="range"></span>
+        <button id="black">Black</button>
+        <button id="random">Random</button>
+        <button id="grey">Grey</button>
+        <button id="eraser">Eraser</button>
+        <button id="reset">Clear</button>
     </header>
+    
     <div class="container"></div>
 </body>
 </html>
